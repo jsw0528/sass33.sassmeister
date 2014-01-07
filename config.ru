@@ -1,6 +1,11 @@
+require "bundler/setup"
+
+require 'rack/contrib'
+
 require './sassmeister'
 
-## There is no need to set directories here anymore;
-## Just run the application
+# Gzip responses
+use Rack::Deflater
 
-run Sinatra::Application
+# Run the application
+run SassMeisterApp
