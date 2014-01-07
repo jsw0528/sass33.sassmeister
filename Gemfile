@@ -3,7 +3,6 @@ ruby '2.0.0'
 
 gem 'rack-contrib', :git => 'git://github.com/rack/rack-contrib.git'
 gem 'sinatra'
-gem 'sinatra-partial'
 gem 'unicorn'
 gem 'sass'
 gem 'compass'
