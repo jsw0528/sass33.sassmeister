@@ -5,6 +5,7 @@ desc "Update bundled gems. Use this in place of bundle update"
 task "bundle:update" do
   plugins = YAML.load_file("config/plugins.yml")
   gemfile = File.new('Gemfile').read
+  sass_input_list = []
 
   plugins.each do |plugin, info|
     if ! gemfile.match(/^gem '#{info[:gem]}'/)
@@ -37,7 +38,6 @@ class Utilities < Thor
 
     def update_plugin_list(file, list)
       gsub_file file, /<ol>\s*(<li>.+?<\/li>\s*)+<\/ol>/, "<ol>\n\t\t#{list.join("\n\t\t")}\n\t</ol>"
-    end
     end
   end
 end
