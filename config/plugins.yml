@@ -7,7 +7,7 @@ Bitters:
   :fingerprint: (bitters|bitters/*)
   :url: http://bitters.bourbon.io
 "Blend Modes":
-  :gem: blend-mode
+  :gem: compass-blend-modes
   :import: 
     - blend-modes
   :fingerprint: blend-mode*
@@ -36,6 +36,12 @@ Breakup:
     - breakup
   :fingerprint: breakup
   :url: https://github.com/BPScott/breakup
+"Ceasar Easing":
+  :gem: ceaser-easing
+  :import:
+    - ceaser-easing
+  :fingerprint: ceaser-easing
+  :url: https://github.com/jhardy/compass-ceaser-easing
 "Color Schemer":
   :gem: color-schemer
   :import: 
@@ -182,13 +188,13 @@ Singularity.gs:
     - singularitygs
   :fingerprint: singularitygs
   :url: https://github.com/Team-Sass/singularity
-"Singularity Extras":
-  :gem: singularity-extras
-  :import:
-    - singularitygs
-    - singularity-extras
-  :fingerprint: singularity-extras
-  :url: https://github.com/Team-Sass/Singularity-extras
+# "Singularity Extras":
+#  :gem: singularity-extras
+#  :import:
+#    - singularitygs
+#    - singularity-extras
+#  :fingerprint: singularity-extras
+#  :url: https://github.com/Team-Sass/Singularity-extras
 "Singularity Golden Grid":
   :gem: singularity-golden-grid
   :import:
@@ -227,6 +233,12 @@ Toolkit:
     - "true"
   :fingerprint: "true"
   :url: https://github.com/ericam/true
+"YIQ Color Contrast":
+  :gem: compass-yiq-color-contrast
+  :import:
+    - yiq-color-contrast
+  :fingerprint: yiq-color-contrast
+  :url: https://github.com/timhettler/compass-yiq-color-contrast
 "Zen Grids":
   :gem: zen-grids
   :import: 
