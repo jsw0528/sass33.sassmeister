@@ -28,6 +28,12 @@ task "bundle:update" do
 end
 
 
+require 'rake/testtask'
+Rake::TestTask.new do |t|
+  t.pattern = "spec/*_spec.rb"
+end
+
+
 class Utilities < Thor
   include Thor::Actions
 
