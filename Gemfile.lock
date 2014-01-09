@@ -183,6 +183,7 @@ DEPENDENCIES
   newrelic_rpm
   normalize-scss
   rack-contrib!
+  rake
   responsive-sass
   rwdcalc
   salsa
