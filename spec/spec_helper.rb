@@ -5,6 +5,7 @@ require 'bundler'
 Bundler.require :default, :test
 
 require 'minitest/autorun'
+require 'minitest/spec'
 require 'rack/test'
 
 require_relative '../sassmeister.rb'
