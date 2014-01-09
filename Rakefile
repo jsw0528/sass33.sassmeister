@@ -18,6 +18,8 @@ task "bundle:update" do
 
   puts stdout
 
+  Rake::Task["test"].invoke
+
   plugins.each do |plugin, info|
     version = stdout.scan(/#{info[:gem]} \((.+)\)/)[0][0].to_s
 

@@ -1,3 +1,5 @@
+require 'yaml'
+require 'json'
 require_relative 'spec_helper.rb'
 
 class AppTest < MiniTest::Spec
@@ -7,6 +9,11 @@ class AppTest < MiniTest::Spec
 
   def app
     SassMeisterApp
+  end
+
+  def is_valid?(css)
+    css.strip!
+    return ! (css.nil? || css.empty? || css.include?('Undefined') || css.include?('Invalid'))
   end
 
   describe "Routes" do
@@ -56,4 +63,23 @@ class AppTest < MiniTest::Spec
     end
 
   end
+
+
+  describe "Extensions" do
+    plugins = YAML.load_file(File.expand_path '../../config/plugins.yml', __FILE__)
+
+    plugins.each do |plugin, info|
+      describe "Sass input with #{plugin} selected" do
+        before do
+          post '/compile', {input: info[:sample], syntax: "scss", output_style: "compact"}
+        end
+
+        it "should return valid CSS" do
+          is_valid?(JSON.parse(last_response.body)['css']).must_equal true
+        end
+      end
+    end
+
+  end
+
 end
