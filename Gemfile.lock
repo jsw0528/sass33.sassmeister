@@ -198,6 +198,7 @@ DEPENDENCIES
   pry-remote
   rack-contrib!
   rack-test
+  rake
   responsive-sass
   rwdcalc
   salsa
