@@ -8,12 +8,18 @@ gem 'sass', "~> 3.3.0.rc.2"
 gem 'compass', "~> 1.0.0.alpha.17"
 gem 'rake'
 
-# group :development do
-#   gem 'pry-remote'
-# end
+group :development do
+  gem 'pry-remote'
+  gem 'thor'
+end
 
 group :production do
   gem 'newrelic_rpm'
+end
+
+group :test do
+  gem 'rack-test'
+  gem 'thor'
 end
 
 gem 'bourbon-compass', "~> 3.2.0.beta.1.a"
