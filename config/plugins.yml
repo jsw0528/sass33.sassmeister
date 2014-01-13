@@ -647,26 +647,26 @@ Singularity.gs:
 #      }
 #    }
 
-"Singularity Golden Grid":
-  :gem: singularity-golden-grid
-  :import:
-    - singularitygs
-    - singularity-golden-grid
-  :fingerprint: singularity-golden-grid
-  :url: https://github.com/hunterman/singularity-golden-grid
-  :sample: >
-    @import "singularitygs";
-    @import 'singularity-golden-grid';
-
-    .my-container {
-        @include grid-container;
-    }
-    .my-grid-unit {
-        @include grid-column(2);
-    }
-    .my-other-grid-unit {
-        @include grid-column;
-    }
+# "Singularity Golden Grid":
+#   :gem: singularity-golden-grid
+#   :import:
+#     - singularitygs
+#     - singularity-golden-grid
+#   :fingerprint: singularity-golden-grid
+#   :url: https://github.com/hunterman/singularity-golden-grid
+#   :sample: >
+#     @import "singularitygs";
+#     @import 'singularity-golden-grid';
+# 
+#     .my-container {
+#         @include grid-container;
+#     }
+#     .my-grid-unit {
+#         @include grid-column(2);
+#     }
+#     .my-other-grid-unit {
+#         @include grid-column;
+#     }
 
 Stipe:
   :gem: stipe

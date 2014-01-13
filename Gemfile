@@ -21,7 +21,7 @@ end
 gem 'bourbon-compass', "~> 3.2.0.beta.1.a"
 gem 'breakpoint', "~> 2.4.1"
 gem 'sassy-buttons'
-gem 'singularitygs'
+gem 'singularitygs', "~> 1.2.0.rc.1"
 gem 'stipe'
 gem 'susy', "~> 2.0.0.beta.2"
 gem 'neat-compass'
@@ -47,7 +47,7 @@ gem 'compass-photoshop-drop-shadow'
 gem 'grid-coordinates'
 gem 'stitch'
 gem 'breakup'
-gem 'singularity-golden-grid'
+# gem 'singularity-golden-grid'
 gem 'compass-placeholders'
 gem 'true'
 gem 'SassyLists'
