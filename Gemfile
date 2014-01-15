@@ -53,6 +53,6 @@ gem 'true'
 gem 'SassyLists'
 gem 'sassy-maps', "~> 0.3.1"
 gem 'bitters-compass'
-
 gem 'ceaser-easing'
 gem 'compass-yiq-color-contrast'
+gem 'bootstrap-sass'
