@@ -18,7 +18,7 @@ group :production do
   gem 'newrelic_rpm'
 end
 
-gem 'bourbon-compass', "~> 3.2.0.beta.1.a"
+gem 'bourbon-compass', "= 3.2.0.beta.1.a"
 gem 'breakpoint', "~> 2.4.1"
 gem 'sassy-buttons'
 gem 'singularitygs', "~> 1.2.0.rc.1"
