@@ -734,18 +734,9 @@ Toolkit:
   :sample: >
     @import "toolkit";
 
-    .ratio-16-9 {
-      @include intrinsic-ratio;
+    .triangle {
+      @include triangle(#09f, 40px, 100px, 150);
     }
-
-    .ratio-4-3-75 {
-      @include intrinsic-ratio(4/3, 75%);
-    }
-
-    .ratio-7-8-75-iframe-no-extend {
-      @include intrinsic-ratio(7/8, 75%, 'iframe', false);
-    }
-
 
 "True":
   :gem: "true"

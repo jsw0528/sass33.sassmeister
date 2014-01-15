@@ -26,7 +26,7 @@ gem 'stipe'
 gem 'susy', "~> 2.0.0.beta.2"
 gem 'neat-compass'
 gem 'harsh'
-gem 'toolkit'
+gem 'toolkit', "~> 2.0.0.alpha.3"
 gem 'color-schemer'
 gem 'css-slideshow'
 gem 'fancy-buttons'
