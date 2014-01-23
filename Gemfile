@@ -40,7 +40,7 @@ gem 'breakpoint-slicer'
 gem 'sassy-text-shadow'
 gem 'compass-blend-modes'
 gem 'jacket'
-gem 'normalize-scss'
+gem 'normalize-scss', "~> 3.0.0.alpha.1"
 gem 'zurb-foundation'
 gem 'compass-inuit'
 gem 'compass-photoshop-drop-shadow'
