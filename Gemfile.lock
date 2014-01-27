@@ -8,6 +8,7 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
+    SassyCast (0.0.1)
     SassyJSON (1.0.11)
     SassyLists (0.4.9)
       compass (>= 0.12.1)
@@ -167,6 +168,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  SassyCast
   SassyJSON
   SassyLists
   bitters-compass

@@ -575,6 +575,19 @@ Salsa:
       line-height: 8em;
     }
 
+SassyCast:
+  :gem: SassyCast
+  :import:
+    - SassyCast
+  :fingerprint: SassyCast
+  :url: https://github.com/HugoGiraudel/SassyCast
+  :sample: >
+    @import "SassyCast";
+
+    .test {
+      foo: to-string(#000); // "#333"
+    }
+
 SassyJSON:
   :gem: SassyJSON
   :import:
