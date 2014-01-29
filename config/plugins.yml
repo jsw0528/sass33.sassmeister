@@ -699,7 +699,7 @@ Singularity.gs:
 #   :sample: >
 #     @import "singularitygs";
 #     @import 'singularity-golden-grid';
-# 
+#
 #     .my-container {
 #         @include grid-container;
 #     }
