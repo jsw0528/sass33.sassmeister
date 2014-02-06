@@ -58,3 +58,5 @@ gem 'compass-yiq-color-contrast'
 gem 'bootstrap-sass'
 gem 'SassyJSON'
 gem 'SassyCast'
+gem 'singularity-extras', "~> 1.0.0.alpha.1"
+
