@@ -23,7 +23,7 @@ gem 'breakpoint', "~> 2.4.1"
 gem 'sassy-buttons'
 gem 'singularitygs', "~> 1.2.0.rc.1"
 gem 'stipe'
-gem 'susy', "~> 2.0.0.beta.2"
+gem 'susy', "~> 2.0.0.rc.1"
 gem 'neat-compass'
 gem 'harsh'
 gem 'toolkit', "~> 2.0.0.alpha.3"

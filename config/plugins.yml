@@ -755,30 +755,30 @@ Stitch:
         @include enable-hardware-acceleration
     }
 
-#Susy:
-#  :gem: susy
-#  :import:
-#    - susy
-#  :fingerprint: susy
-#  :url: http://susy.oddbird.net
-#  :sample: >
-#    @import "susy";
-#
-#    .ag1 { @include span(2); }
-#    .ag4 { @include span(3); }
-#
-#Toolkit:
-#  :gem: toolkit
-#  :import:
-#    - toolkit
-#  :fingerprint: toolkit
-#  :url: https://github.com/Team-Sass/toolkit
-#  :sample: >
-#    @import "toolkit";
-#
-#    .triangle {
-#      @include triangle(#09f, 40px, 100px, 150);
-#    }
+Susy:
+  :gem: susy
+  :import:
+    - susy
+  :fingerprint: susy
+  :url: http://susy.oddbird.net
+  :sample: >
+    @import "susy";
+
+    .ag1 { @include span(2); }
+    .ag4 { @include span(3); }
+
+Toolkit:
+  :gem: toolkit
+  :import:
+    - toolkit
+  :fingerprint: toolkit
+  :url: https://github.com/Team-Sass/toolkit
+  :sample: >
+    @import "toolkit";
+
+    .triangle {
+      @include triangle(#09f, 40px, 100px, 150);
+    }
 
 "True":
   :gem: "true"
