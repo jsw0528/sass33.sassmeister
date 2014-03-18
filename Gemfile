@@ -63,3 +63,4 @@ gem 'singularity-extras', "~> 1.0.0.alpha.1"
 gem 'responsive-modular-scale'
 # gem 'SassyStrings'
 gem 'scut'
+gem 'guff-compass'
