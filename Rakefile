@@ -8,7 +8,9 @@ task "bundle:update" do
 
     no_tasks do
       def append(file, string)
-         append_file file, string, {:verbose => false}
+        gsub_file file, /^(gem .+?)(gem .+?)+$/, '\1' + "\n" + '\2' 
+        append_file file, string, {:verbose => false}
+        gsub_file file, /^(gem .+?)(gem .+?)+$/, '\1' + "\n" + '\2'
       end
 
       def update_plugin_list(file, list)
