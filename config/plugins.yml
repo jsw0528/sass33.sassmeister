@@ -663,6 +663,20 @@ SassyLists:
 # 
 # 
 
+SassySort:
+  :gem: SassySort
+  :import:
+    - SassySort
+  :fingerprint: SassySort
+  :sample: >
+    @import "SassySort";
+
+    $list: orange, strawberry, pear, banana, mango;
+
+    .sass {
+      sort: sort($list);
+    }
+
 Scut:
   :gem: scut
   :import: 
