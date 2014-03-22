@@ -583,6 +583,21 @@ Salsa:
         debug: map-get($map, 'key2');
     }
 
+SassyMatrix:
+  :gem: SassyMatrix
+  :import:
+    - matrix
+  :fingerprint: matrix
+  :sample: >
+    @import "matrix";
+
+    $matrix: matrix(3, 3);
+
+    .box {
+      @include display($matrix);
+    }
+
+
 "Sassy Text Shadow":
   :gem: sassy-text-shadow
   :import:
