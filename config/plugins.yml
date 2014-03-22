@@ -688,6 +688,13 @@ SassyStrings:
   :url: https://github.com/Team-Sass/Sassy-Strings
   :sample: >
     @import "SassyStrings";
+    
+    $string: 'SassyStrings';
+    $index: 2;
+
+    .foo {
+      bar: char-at($string, $index);
+    }
 
 SassySort:
   :gem: SassySort
