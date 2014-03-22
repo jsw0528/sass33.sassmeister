@@ -107,6 +107,8 @@ GEM
     pry-remote (0.1.8)
       pry (~> 0.9)
       slop (~> 3.0)
+    quotation-marks (0.1.0)
+      sass (>= 3.3)
     rack (1.5.2)
     rack-protection (1.5.2)
       rack
@@ -208,6 +210,7 @@ DEPENDENCIES
   newrelic_rpm
   normalize-scss (~> 3.0.0.alpha.1)
   pry-remote
+  quotation-marks
   rack-contrib!
   rack-test
   rake

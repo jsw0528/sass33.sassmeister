@@ -477,6 +477,19 @@ Neat:
       );
     }
 
+
+"Quotation Marks":
+  :gem: quotation-marks
+  :import:
+    - quotation-marks
+  :fingerprint: quotation-marks
+  :sample: >
+    @import "quotation-marks";
+
+    .my-class {
+      @include localized-quotation-marks(en de);
+    }
+
 "Responsive Calculator":
   :gem: rwdcalc
   :import:
@@ -667,16 +680,14 @@ SassyLists:
       color: chunk(a b c d e, 2);
     }
 
-# SassyStrings:
-#   :gem: SassyStrings
-#   :import:
-#     - SassyString
-#   :fingerprint: SassyString
-#   :url: https://github.com/Team-Sass/Sassy-Strings
-#   :sample: >
-#     @import "SassyStrings";
-# 
-# 
+SassyStrings:
+  :gem: SassyStrings
+  :import:
+    - SassyString
+  :fingerprint: SassyString
+  :url: https://github.com/Team-Sass/Sassy-Strings
+  :sample: >
+    @import "SassyStrings";
 
 SassySort:
   :gem: SassySort
