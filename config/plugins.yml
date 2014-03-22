@@ -553,6 +553,18 @@ Salsa:
     .e9 { @include grid(2/4); }
     .e10 { @include grid(100%); }
 
+Sassifaction:
+  :gem: Sassifaction
+  :import:
+    - Sassifaction
+  :fingerprint: Sassifaction
+  :sample: >
+    @import "Sassifaction";
+
+    .sass {
+      @extend %visually-hidden;
+    }
+
 "Sassy Buttons":
   :gem: sassy-buttons
   :import:

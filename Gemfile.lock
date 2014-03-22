@@ -8,6 +8,9 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
+    Sassifaction (0.0.3)
+      compass (>= 0.12.1)
+      sass (>= 3.2.0)
     SassyCast (1.0.0)
     SassyJSON (1.1.6)
     SassyLists (1.0.0)
@@ -181,6 +184,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  Sassifaction
   SassyCast
   SassyJSON
   SassyLists
