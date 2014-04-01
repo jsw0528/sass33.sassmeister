@@ -71,7 +71,7 @@ class AppTest < MiniTest::Spec
     plugins.each do |plugin, info|
       describe "Sass input with #{plugin} selected" do
         before do
-          post '/compile', {input: info[:sample], syntax: "scss", output_style: "compact"}
+          post '/compile', {input: File.read(File.expand_path "spec/fixtures/#{plugin}.scss"), syntax: "scss", output_style: "compact"}
         end
 
         it "should return valid CSS" do
