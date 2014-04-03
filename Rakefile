@@ -8,7 +8,7 @@ task "bundle:update" do
 
     no_tasks do
       def append(file, string)
-        gsub_file file, /^(gem .+?)(gem .+?)+$/, '\1' + "\n" + '\2' 
+        gsub_file file, /^(gem .+?)(gem .+?)+$/, '\1' + "\n" + '\2'
         append_file file, string, {:verbose => false}
         gsub_file file, /^(gem .+?)(gem .+?)+$/, '\1' + "\n" + '\2'
       end
@@ -24,9 +24,10 @@ task "bundle:update" do
   sass_input_list = []
 
   plugins.each do |plugin, info|
-    if ! gemfile.match(/^gem '#{info[:gem]}'/)
+    if ! gemfile.match(/^\s*gem '#{info[:gem]}'/)
       puts "Adding #{info[:gem]} to Gemfile..."
-      Utilities.new.append('Gemfile', "gem '#{info[:gem]}'")
+
+      Utilities.new.inject_into_file('Gemfile', "  gem '#{info[:gem]}'\n", :after => "group :application do\n")
     end
   end
 
