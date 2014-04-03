@@ -1,7 +1,9 @@
 $LOAD_PATH.unshift(File.join(File.dirname(File.realpath(__FILE__)), 'lib'))
 
 require 'rubygems'
-require 'bundler/setup'
+require 'bundler'
+Bundler.setup(:default, :application, ENV['RACK_ENV'])
+
 require 'sinatra/base'
 require 'json'
 require 'sass'
