@@ -24,7 +24,7 @@ task "bundle:update" do
   sass_input_list = []
 
   plugins.each do |plugin, info|
-    if ! gemfile.match(/^\s*gem '#{info[:gem]}'/)
+    if ! gemfile.match(/^\s*gem '#{info[:gem]}'/) && !info[:gem].nil?
       puts "Adding #{info[:gem]} to Gemfile..."
 
       Utilities.new.inject_into_file('Gemfile', "  gem '#{info[:gem]}'\n", :after => "group :application do\n")
