@@ -1,5 +1,5 @@
-desc "Update bundled gems. Use this in place of bundle update"
-task "bundle:update" do
+desc 'Update bundled gems and bower packages. Use this in place of `bundle update` and `bower update`'
+task "update" do
   require 'yaml'
   require 'thor'
 
