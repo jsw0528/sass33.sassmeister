@@ -37,8 +37,12 @@ task "bundle:update" do
   
   Rake::Task["test"].invoke
 
-  plugins.each do |plugin, info|
-    version = stdout.scan(/#{info[:gem]} (.+)/)[0][0].to_s
+  plugins.sort.each do |plugin, info|
+    if info[:gem]
+      version = stdout.scan(/#{info[:gem]} (.+)/)[0][0].to_s
+    else
+      version = stdout.scan(/#{info[:bower]}.+?((?:\d\.)+\d)\s/)[0][0].to_s
+    end
 
     sass_input_list.push "<li><a data-import=\"#{info[:import].to_s.gsub(/(\"|\[|\]|\s*)/, '')}\">#{plugin}</a>&nbsp;&nbsp;(v#{version})</li>"
   end
