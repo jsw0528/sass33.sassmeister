@@ -32,9 +32,9 @@ task "bundle:update" do
   end
 
   stdout = `bundle update`
-
+  stdout += `bower update`
   puts stdout
-
+  
   Rake::Task["test"].invoke
 
   plugins.each do |plugin, info|
