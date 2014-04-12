@@ -1,4 +1,3 @@
----
 Bitters:
   :gem: bitters-compass
   :import:
@@ -17,7 +16,7 @@ Bootstrap Sass:
     - bootstrap
   :fingerprint: (bootstrap|bootstrap/*)
 Bourbon:
-  :bower: bourbon-compass
+  :gem: bourbon-compass
   :import:
     - bourbon
   :paths:
