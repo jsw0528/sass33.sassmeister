@@ -14,7 +14,7 @@ task "update" do
       end
 
       def update_plugin_list(file, list)
-        gsub_file file, /<ol>\s*(<li>.+?<\/li>\s*)+<\/ol>/, "<ol>\n\t\t#{list.join("\n\t\t")}\n\t</ol>"
+        gsub_file file, /<ol>\s*(<li>.+?<\/li>\s*)+<\/ol>/, "<ol>\n    #{list.join("\n    ")}\n  </ol>"
       end
     end
   end
