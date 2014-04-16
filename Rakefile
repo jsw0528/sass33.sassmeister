@@ -1,6 +1,7 @@
 desc 'Update bundled gems and bower packages. Use this in place of `bundle update` and `bower update`'
 task "update" do
   require 'yaml'
+  require 'json'
   require 'thor'
 
   class Utilities < Thor
@@ -34,16 +35,22 @@ task "update" do
   end
 
   stdout = `bundle update`
-  stdout += `bower update`
   puts stdout
-  
+
+  puts `bower update`
+
   Rake::Task["test"].invoke
 
   plugins.sort.each do |plugin, info|
     if info[:gem]
       version = stdout.scan(/#{info[:gem]} (.+)/)[0][0].to_s
     else
-      version = stdout.scan(/#{info[:bower]}.+?((?:\d\.)+\d)\s/)[0][0].to_s
+      version = `bower info #{info[:bower]} version -jq`.chomp!
+      version.gsub!(/"/, '') unless version.nil?
+
+      if version.nil?
+        version = JSON.parse(File.read("lib/sass_modules/#{info[:bower]}/.bower.json"))["_release"]
+      end
     end
 
     sass_input_list.push "<li><a data-import=\"#{info[:import].to_s.gsub(/(\"|\[|\]|\s*)/, '')}\">#{plugin}</a>&nbsp;&nbsp;(v#{version})</li>"
