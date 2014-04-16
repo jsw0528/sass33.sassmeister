@@ -19,6 +19,8 @@ task "update" do
     end
   end
 
+  utilities = Utilities.new
+
   plugins = YAML.load_file("config/plugins.yml")
   gemfile = File.new('Gemfile').read
   sass_input_list = []
@@ -27,7 +29,7 @@ task "update" do
     if ! gemfile.match(/^\s*gem '#{info[:gem]}'/) && !info[:gem].nil?
       puts "Adding #{info[:gem]} to Gemfile..."
 
-      Utilities.new.inject_into_file('Gemfile', "  gem '#{info[:gem]}'\n", :after => "group :application do\n")
+      utilities.inject_into_file('Gemfile', "  gem '#{info[:gem]}'\n", :after => "group :application do\n")
     end
   end
 
@@ -47,7 +49,7 @@ task "update" do
     sass_input_list.push "<li><a data-import=\"#{info[:import].to_s.gsub(/(\"|\[|\]|\s*)/, '')}\">#{plugin}</a>&nbsp;&nbsp;(v#{version})</li>"
   end
 
-  Utilities.new.update_plugin_list('public/extensions.html', sass_input_list)
+  utilities.update_plugin_list('public/extensions.html', sass_input_list)
 end
 
 
