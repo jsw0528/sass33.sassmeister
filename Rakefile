@@ -25,6 +25,7 @@ task "update" do
   plugins = YAML.load_file("config/plugins.yml")
   gemfile = File.new('Gemfile').read
   sass_input_list = []
+  new_specs = []
 
   plugins.each do |plugin, info|
     if ! gemfile.match(/^\s*gem '#{info[:gem]}'/) && !info[:gem].nil?
@@ -32,12 +33,24 @@ task "update" do
 
       utilities.inject_into_file('Gemfile', "  gem '#{info[:gem]}'\n", :after => "group :application do\n")
     end
+
+    unless File.exists? "spec/fixtures/#{plugin}.scss"
+      utilities.create_file "spec/fixtures/#{plugin}.scss"
+
+      new_specs.push "spec/fixtures/#{plugin}.scss"
+    end
   end
 
   stdout = `bundle update`
   puts stdout
 
   puts `bower update`
+
+  unless new_specs.empty?
+    utilities.say_status('stopped', 'Populate the following new spec fixtures before continuing.', :red)
+    new_specs.each {|spec| utilities.say_status('new', spec, :blue)}
+    raise
+  end
 
   Rake::Task["test"].invoke
 
