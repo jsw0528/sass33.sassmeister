@@ -5,7 +5,7 @@ module SassMeister
 
 
   def require_plugins(sass)
-    local_paths = []
+    local_paths = ["lib/sass_modules/"]
 
     get_imports_from_sass(sass) do |name, plugin| 
       if plugin[:gem]
@@ -17,8 +17,6 @@ module SassMeister
             local_paths << "lib/sass_modules/#{path}"
           end
         end
-
-        local_paths << "lib/sass_modules/"
       end
     end
 
