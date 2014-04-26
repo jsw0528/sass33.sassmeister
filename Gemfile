@@ -7,9 +7,10 @@ gem 'unicorn'
 gem 'sass'
 gem 'compass', "1.0.0.alpha.18"
 gem 'ffi', "= 1.9.0"
-gem 'rake'
+gem 'sassmeister', :path => '../sassmeister-compiler'
 
 group :development, :test do
+  gem 'rake'
   gem 'pry-remote'
   gem 'thor'
   gem 'rack-test'

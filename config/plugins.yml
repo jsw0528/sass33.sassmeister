@@ -1,4 +1,10 @@
----
+Garnish:
+  :bower: garnish
+  :import: 
+    - garnish
+  :fingerprint: garnish
+  :paths: 
+    - garnish/src
 Bitters:
   :gem: bitters-compass
   :import:
@@ -19,7 +25,9 @@ Bootstrap Sass:
 Bourbon:
   :gem: bourbon-compass
   :import:
-    - bourbon/bourbon
+    - bourbon
+  :paths:
+    - bourbon/app/assets/stylesheets
   :fingerprint: (bourbon|bourbon/*)
 Breakpoint:
   :gem: breakpoint
