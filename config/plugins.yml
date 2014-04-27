@@ -81,6 +81,11 @@ Fittext:
   :import:
     - fittext
   :fingerprint: fittext
+Flint:
+  :gem: flint-gs
+  :import:
+    - flint
+  :fingerprint: flint
 Foundation:
   :gem: zurb-foundation
   :import:

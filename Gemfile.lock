@@ -84,6 +84,9 @@ GEM
     ffi (1.9.0)
     fittext (0.0.5)
       compass (>= 0.10.0.rc3)
+    flint-gs (1.0.7)
+      compass (>= 0.12.1)
+      sass (>= 3.3.0)
     grid-coordinates (1.2.0)
       compass (>= 0.11.5)
     guff-compass (1.0.0)
@@ -215,6 +218,7 @@ DEPENDENCIES
   fancy-buttons
   ffi (= 1.9.0)
   fittext
+  flint-gs
   grid-coordinates
   guff-compass
   harsh

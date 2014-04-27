@@ -21,6 +21,7 @@ group :production do
 end
 
 group :application do
+  gem 'flint-gs'
   gem 'bourbon-compass', "= 3.2.0.beta.1.a"
   gem 'breakpoint', "~> 2.4.1"
   gem 'sassy-buttons'
