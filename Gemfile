@@ -22,7 +22,7 @@ end
 
 group :application do
   gem 'flint-gs'
-  gem 'bourbon-compass', "= 3.2.0.beta.1.a"
+  gem 'bourbon-compass'
   gem 'breakpoint', "~> 2.4.1"
   gem 'sassy-buttons'
   gem 'singularitygs', "~> 1.2.0.rc.1"

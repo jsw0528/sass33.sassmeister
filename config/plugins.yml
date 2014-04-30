@@ -25,9 +25,7 @@ Bootstrap Sass:
 Bourbon:
   :gem: bourbon-compass
   :import:
-    - bourbon
-  :paths:
-    - bourbon/app/assets/stylesheets
+    - bourbon/bourbon
   :fingerprint: (bourbon|bourbon/*)
 Breakpoint:
   :gem: breakpoint

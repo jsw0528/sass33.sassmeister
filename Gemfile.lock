@@ -34,9 +34,9 @@ GEM
       sass (>= 3.2)
     bootstrap-sass (3.1.1.1)
       sass (~> 3.2)
-    bourbon-compass (3.2.0.beta.1.a)
+    bourbon-compass (4.0.1)
       compass (>= 0.13.alpha.10)
-      sass (>= 3.3.0.rc.1)
+      sass (>= 3.3)
     breakpoint (2.4.2)
       sass (~> 3.3.0)
       sassy-maps (< 1.0.0)
@@ -202,7 +202,7 @@ DEPENDENCIES
   SassyStrings
   bitters-compass
   bootstrap-sass
-  bourbon-compass (= 3.2.0.beta.1.a)
+  bourbon-compass
   breakpoint (~> 2.4.1)
   breakpoint-slicer
   breakup
