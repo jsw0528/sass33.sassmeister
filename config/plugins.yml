@@ -1,3 +1,10 @@
+CSShake:
+  :bower: csshake
+  :import: 
+    - csshake
+  :fingerprint: csshake
+  :paths:
+    - csshake/sass
 Garnish:
   :bower: garnish
   :import: 
