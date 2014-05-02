@@ -1,3 +1,10 @@
+Typecsset:
+  :bower: typecsset
+  :import:
+    - typecsset
+  :fingerprint: typecsset
+  :paths:
+    - typecsset
 CSShake:
   :bower: csshake
   :import: 
