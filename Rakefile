@@ -1,8 +1,6 @@
-#require 'pry'
-#binding.pry
+require 'bundler/setup'
 
-#Dir.glob('lib/tasks/*.rake').each { |r| import r}
-
+require 'sassmeister'
 
 load 'lib/tasks/test.rake'
 load 'lib/tasks/update.rake'
