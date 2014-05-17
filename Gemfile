@@ -22,6 +22,7 @@ group :production do
 end
 
 group :application do
+  gem 'base.sass'
   gem 'flint-gs'
   gem 'bourbon-compass'
   gem 'breakpoint', "~> 2.4.1"
