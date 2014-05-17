@@ -104,10 +104,12 @@ Flint:
     - flint
   :fingerprint: flint
 Foundation:
-  :gem: zurb-foundation
+  :bower: zurb/bower-foundation
   :import:
     - foundation
   :fingerprint: foundation*
+  :paths:
+    - foundation/scss
 Grid Coordinates:
   :gem: grid-coordinates
   :import:

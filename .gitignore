@@ -2,3 +2,8 @@
 .bundle
 .sass-cache/*
 tmp/
+lib/sass_modules/fastclick
+lib/sass_modules/lodash
+lib/sass_modules/jquery*
+lib/sass_modules/modernizr
+lib/sass_modules/sizzle

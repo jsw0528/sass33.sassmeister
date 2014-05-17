@@ -47,7 +47,7 @@ group :application do
   gem 'compass-blend-modes'
   gem 'jacket'
   gem 'normalize-scss', "~> 3.0.0.alpha.1"
-  gem 'zurb-foundation'
+  # gem 'zurb-foundation'
   gem 'compass-inuit'
   gem 'compass-photoshop-drop-shadow'
   gem 'grid-coordinates'

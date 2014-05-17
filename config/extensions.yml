@@ -132,12 +132,14 @@ Flint:
   :fingerprint: flint
   :homepage: https://github.com/ezekg/flint/
 Foundation:
-  :gem: zurb-foundation
-  :version: 4.3.2
+  :bower: zurb/bower-foundation
+  :paths:
+  - foundation/scss
+  :version: 5.2.2
   :import:
   - foundation
   :fingerprint: foundation*
-  :homepage: http://foundation.zurb.com
+  :homepage: https://github.com/zurb/bower-foundation
 Garnish:
   :bower: garnish
   :paths:
