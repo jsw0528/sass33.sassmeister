@@ -1,6 +1,6 @@
-# Sass 3.2 service for SassMeister.com 
+# Sass 3.3 service for SassMeister.com 
 
-This app is simply a service that compiles Sass using Sass v3.2 for [SassMeister.com][sassmeister]. It is not intended to run by itself.
+This app is simply a service that compiles Sass using Sass v3.3 for [SassMeister.com][sassmeister]. It is not intended to run by itself.
 
 ## Author
 SassMeister is written by [Jed Foster][jedfoster].
